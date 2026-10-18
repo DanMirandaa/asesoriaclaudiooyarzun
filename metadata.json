@@ -1,0 +1,6 @@
+{
+  "name": "Asesoría Claudio Oyarzún",
+  "description": "Asesoría contable, tributaria y laboral profesional para empresas y profesionales independientes por Claudio Oyarzún.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
