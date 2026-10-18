@@ -1,6 +1,7 @@
 import React from 'react';
 import { MessageCircle, ArrowRight, ShieldCheck, CheckCircle2, Award, Clock, FileCheck } from 'lucide-react';
 import { createWhatsAppUrl, DEFAULT_WA_MESSAGE } from '../data/landingData';
+import claudioPortrait from '../assets/images/claudio_oyarzun_portrait_1792118724512.jpg';
 
 export const Hero: React.FC = () => {
   const waUrl = createWhatsAppUrl(DEFAULT_WA_MESSAGE);
@@ -84,9 +85,12 @@ export const Hero: React.FC = () => {
 
               <div className="relative rounded-2xl overflow-hidden border border-slate-200/90 shadow-2xl bg-slate-900 group">
                 <img
-                  src="/src/assets/images/claudio_oyarzun_portrait_1792118724512.jpg"
+                  src={claudioPortrait}
                   alt="Claudio Oyarzún, Contador Auditor y Asesor Tributario"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/claudio_oyarzun.jpg';
+                  }}
                   className="w-full h-[400px] sm:h-[460px] object-cover object-top group-hover:scale-[1.01] transition-transform duration-500"
                 />
 
